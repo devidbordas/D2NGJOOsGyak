@@ -17,7 +17,7 @@ int close(int);
 
 int main(void)
 {
-    int fileHandle = open(FAJL, D_RDWR);
+    int fileHandle = open(FAJL, O_RDWR);
     if(fileHandle == -1)
     {
         printf("Nem sikerult megnyitni a(z) \"%s\" fajlt!\n", FAJL);
