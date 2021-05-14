@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define FAJL "OYFTRQ.txt"
+#define FAJL "D2NGJO.txt"
 
 /* Rendszerhivások prototipusa
 size_t write (int, void*, size_t);
@@ -17,7 +17,7 @@ int close(int);
 
 int main(void)
 {
-    int fileHandle = open(FAJL, O_RDWR);
+    int fileHandle = open(FAJL, D_RDWR);
     if(fileHandle == -1)
     {
         printf("Nem sikerult megnyitni a(z) \"%s\" fajlt!\n", FAJL);
